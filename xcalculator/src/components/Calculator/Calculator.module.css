@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.appName {
+    margin: 1rem;
+}
+
+#display {
+    margin: 0.5rem;
+    height: 1rem;
+    width: 9rem;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+#display:disabled {
+    background-color: var(--color-white);
+}
+
+.grid {
+    display: grid;
+    margin: 1rem 1rem 1rem 1rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: 2px solid gray;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.button:active {
+    background-color: #b9b9b9;
+    transform: scale(0.98);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(26, 90, 0, 0.5);
+}
+
+.result {
+    margin-bottom: 1px;
+    color: gray;
+}
